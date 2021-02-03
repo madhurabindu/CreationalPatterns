@@ -9,15 +9,15 @@ In Factory pattern, we create object without exposing the creation logic to clie
 ## Mapping the UML classes to Example code
 | File/Class Name| Mapping UML Class Name  |
 | :-----: | :-: |
-| [BaseInterfaces/IConfig.cs](./BaseInterfaces/IConfig.cs)| Product |
-| [CSVConfig/CSVConfig.cs](./CSVConfig/CSVConfig.cs)| ConcreteProduct1|
-| [XMLCOnfig/XMLConfig.cs](./XMLConfig/XMLConfig.cs)| ConcreteProduct2|
-| [JSONConfig/JsonConfig.cs](./JSonConfig/JsonConfig.cs)| ConcreteProduct3|
-| [RepoFactory/ConfigRepoFactory.cs](./RepoFactory/ConfigRepoFactory.cs) | Creator |
-| [RepoFactory/CSVRepoFactory.cs](./RepoFactory/CSVRepoFactory.cs)| ConcreteCreator1|
-| [RepoFactory/XMLRepoFactory.cs](./RepoFactory/XMLRepoFactory.cs)| ConcreteCreator2|
-| [RepoFactory/JsonRepoFactory.cs](./RepoFactory/JsonRepoFactory.cs)| ConcreteCreator3|
-| [AppMain\Program.cs](./AppMain/Program.cs) | main() function, invoker of client |
+| [BaseInterfaces/IConfig.cs](./BaseInterfaces/IConfig.cs)| **Product** |
+| [CSVConfig/CSVConfig.cs](./CSVConfig/CSVConfig.cs)| **ConcreteProduct1**|
+| [XMLCOnfig/XMLConfig.cs](./XMLConfig/XMLConfig.cs)| **ConcreteProduct2**|
+| [JSONConfig/JsonConfig.cs](./JSonConfig/JsonConfig.cs)| **ConcreteProduct3**|
+| [RepoFactory/ConfigRepoFactory.cs](./RepoFactory/ConfigRepoFactory.cs) | **Creator** |
+| [RepoFactory/CSVRepoFactory.cs](./RepoFactory/CSVRepoFactory.cs)| **ConcreteCreator1**|
+| [RepoFactory/XMLRepoFactory.cs](./RepoFactory/XMLRepoFactory.cs)| **ConcreteCreator2**|
+| [RepoFactory/JsonRepoFactory.cs](./RepoFactory/JsonRepoFactory.cs)| **ConcreteCreator3**|
+| [AppMain\Program.cs](./AppMain/Program.cs) | **main() function, invoker of client** |
 
 
 ## Useful References
