@@ -6,7 +6,7 @@ In Factory pattern, we create object without exposing the creation logic to clie
 ## UML Diagram
 ![plot](./factory.gif)
 
-## Mapping the design pattern UML to Example
+## Mapping the UML classes to Example code
 | File/Class Name| Mapping UML Class Name  |
 | :-----: | :-: |
 | BaseInterfaces/IConfig.cs| Product |
