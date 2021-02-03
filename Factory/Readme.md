@@ -7,7 +7,7 @@ In Factory pattern, we create object without exposing the creation logic to clie
 ![plot](./factory.gif)
 
 ## Mapping the UML classes to Example code
-### | File/Class Name| Mapping UML Class Name  |
+| **File/Class Name** | **Mapping UML Class Name**  |
 | :-----: | :-: |
 | [BaseInterfaces/IConfig.cs](./BaseInterfaces/IConfig.cs)| **Product** |
 | [CSVConfig/CSVConfig.cs](./CSVConfig/CSVConfig.cs)| **ConcreteProduct1**|
