@@ -9,7 +9,7 @@ In Factory pattern, we create object without exposing the creation logic to clie
 ## Mapping the UML classes to Example code
 | File/Class Name| Mapping UML Class Name  |
 | :-----: | :-: |
-| BaseInterfaces/IConfig.cs| Product |
+| [BaseInterfaces/IConfig.cs](./BaseInterfaces/IConfig.cs)| Product |
 | CSVConfig/CSVConfig.cs| ConcreteProduct1|
 | XMLCOnfig/XMLConfig.cs| ConcreteProduct2|
 | JSONConfig/JsonConfig.cs| ConcreteProduct3|
