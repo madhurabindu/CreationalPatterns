@@ -1,9 +1,19 @@
 # Factory Method (Creational Pattern)
-In Factory pattern, we create object without exposing the creation logic to client and the client use the same common interface to create new type of object.
-<br/>As in this example, moving of your client to a new configuration mechanism over the life of the software does not affect the client code. 
-<br/>Adding of new config mechnism only needs adding of a new code and making change in one single method.
+## Overview
+In Factory pattern, we create object without exposing the creation logic to client and the client use the same common interface to create new type of object. It is creational design pattern that provides an interface for creating objects but allows subclasses to alter the type of an object that will be created.
 
-## UML Diagram
+## Intent
+- Separate the creational logic from rest of the code
+- Defer the instantiation logic to sub class to enable extensibility
+- "new" operator thorughout the code is considered harmful
+
+## Configuration Example
+The Example depicts a system which was built with its configuration in CSV format. Over time as the technology evolved and the complexity of the system increased, the system was moved to XML based configuration. Later on with support of web based application, the configuration in the JSON format is supported.
+
+In this example, Different Repositories (Creator) can choose which  Configuration (Product) to create.
+Supporting a new configuration only needs new implementation and plugging in the code to the creation loigc.
+
+## Factory method UML Diagram
 ![plot](./factory.gif)
 
 ## Mapping the UML classes to Example code
@@ -19,7 +29,11 @@ In Factory pattern, we create object without exposing the creation logic to clie
 | [RepoFactory/JsonRepoFactory.cs](./RepoFactory/JsonRepoFactory.cs)| *ConcreteCreator3*|
 | [AppMain/Program.cs](./AppMain/Program.cs) | *main() function, invoker of client* |
 
-
+## Points to Remember
+- Factory Method is creation through inheritance.
+- Consider designing an internal "object pool" that will allow objects to be reused instead of created from scratch (as in this example).
+- It is a common practice to start with a simple factory method by removing the inheritance in the Creator class and have the inheritance only in product. However as system evolves if need arises, the simple factory method turns into pattern as described in picture above as a natural progression.  
+- 
 ## Useful References
 - [https://sourcemaking.com/design_patterns/factory_method](https://sourcemaking.com/design_patterns/factory_method)
 - [https://www.dofactory.com/net/factory-method-design-pattern](https://www.dofactory.com/net/factory-method-design-pattern)
