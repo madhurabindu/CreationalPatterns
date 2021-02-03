@@ -6,6 +6,11 @@ In Factory pattern, we create object without exposing the creation logic to clie
 ## UML Diagram
 ![plot](./factory.gif)
 
+## Mapping the design pattern UML to Example
+| Class Name| Mapping UML Class Name  |
+| :-----: | :-: |
+| AppMain\Program.cs | main() function, invoker of client |
+
 ## Useful References
 - [https://sourcemaking.com/design_patterns/factory_method](https://sourcemaking.com/design_patterns/factory_method)
 - [https://www.dofactory.com/net/factory-method-design-pattern](https://www.dofactory.com/net/factory-method-design-pattern)
