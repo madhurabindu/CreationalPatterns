@@ -8,9 +8,9 @@ In this pattern, we create object without exposing the creation logic to client 
 ![plot](./factory.gif)
 
 ## Intent
+- "new" operator thorughout the client code is harmful
 - Separate the creational logic of the **Product** from the **Client** and move to **Creator**
 - Defer the instantiation logic to sub classes to enable extensibility
-- "new" operator thorughout the client code is harmful
 
 ## Configuration Example
 The Example depicts a system which was built with its configuration in CSV format. Over time as the technology evolved and the complexity of the system increased, the system was moved to XML based configuration. Later on with support of web based application, the configuration in the JSON format is supported.
