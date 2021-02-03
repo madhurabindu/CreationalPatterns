@@ -1,7 +1,7 @@
 # Factory pattern
 In Factory pattern, we create object without exposing the creation logic to client and the client use the same common interface to create new type of object.
-As in this example, moving of your client to a new configuration mechanism over the life of the software does not affect the client code. 
-Adding of new config mechnism only needs adding of a new code and making change in one single method.
+<br/>As in this example, moving of your client to a new configuration mechanism over the life of the software does not affect the client code. 
+<br/>Adding of new config mechnism only needs adding of a new code and making change in one single method.
 
 ## UML Diagram
 ![plot](./factory.gif)
