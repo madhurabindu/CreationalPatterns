@@ -17,7 +17,7 @@ In Factory pattern, we create object without exposing the creation logic to clie
 | [RepoFactory/CSVRepoFactory.cs](./RepoFactory/CSVRepoFactory.cs)| ConcreteCreator1|
 | [RepoFactory/XMLRepoFactory.cs](./RepoFactory/XMLRepoFactory.cs)| ConcreteCreator2|
 | [RepoFactory/JsonRepoFactory.cs](./RepoFactory/JsonRepoFactory.cs)| ConcreteCreator3|
-| [AppMain\Program.cs | main() function, invoker of client |
+| [AppMain\Program.cs](./AppMain/Program.cs) | main() function, invoker of client |
 
 
 ## Useful References
