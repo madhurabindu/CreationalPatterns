@@ -12,7 +12,7 @@ In Factory pattern, we create object without exposing the creation logic to clie
 | [BaseInterfaces/IConfig.cs](./BaseInterfaces/IConfig.cs)| Product |
 | [CSVConfig/CSVConfig.cs](./CSVConfig/CSVConfig.cs)| ConcreteProduct1|
 | [XMLCOnfig/XMLConfig.cs](./XMLConfig/XMLConfig.cs)| ConcreteProduct2|
-| [JSONConfig/JsonConfig.cs](./JSONConfig/JsonConfig.cs)| ConcreteProduct3|
+| [JSONConfig/JsonConfig.cs](./JSonConfig/JsonConfig.cs)| ConcreteProduct3|
 | [RepoFactory/ConfigRepoFactory.cs](./RepoFactory/ConfigRepoFactory.cs) | Creator |
 | [RepoFactory/CSVRepoFactory.cs](./RepoFactory/CSVRepoFactory.cs)| ConcreteCreator1|
 | [RepoFactory/XMLRepoFactory.cs](./RepoFactory/XMLRepoFactory.cs)| ConcreteCreator2|
