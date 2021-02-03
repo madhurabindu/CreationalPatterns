@@ -5,6 +5,7 @@ using JSonConfiguration;
 namespace FactoryPattern.ConfigRepository
 {
     /// <summary>
+    /// Factory Design pattern: Concrete Creator
     /// Repo factory for new JSON format of repo
     /// </summary>
     public class JSonRepoFactory : ConfigRepoFactory
