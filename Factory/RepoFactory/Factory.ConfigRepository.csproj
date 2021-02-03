@@ -45,8 +45,13 @@
     <Compile Include="CSVRepoFactory.cs" />
     <Compile Include="JsonRepoFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XMLRepoFactory.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BaseInterfaces\Base.Interfaces.csproj">
+      <Project>{722E2497-C223-4240-8B18-ED40EEAA50FD}</Project>
+      <Name>Base.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CSVConfig\Imp.CSVConfig.csproj">
       <Project>{6195C2DE-D906-4DF6-BAEB-F6504B991368}</Project>
       <Name>Imp.CSVConfig</Name>
@@ -55,9 +60,9 @@
       <Project>{CCED1F42-2DFE-4476-B414-2AFE86600FFB}</Project>
       <Name>Imp.JSonConfig</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UIInterface\Base.Interfaces.csproj">
-      <Project>{722E2497-C223-4240-8B18-ED40EEAA50FD}</Project>
-      <Name>Base.Interfaces</Name>
+    <ProjectReference Include="..\XMLConfig\Imp.XMLConfig.csproj">
+      <Project>{B0A26E4E-AB07-4F13-8365-A34BC929B6B6}</Project>
+      <Name>Imp.XMLConfig</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

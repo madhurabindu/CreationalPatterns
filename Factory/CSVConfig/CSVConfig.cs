@@ -3,6 +3,9 @@ using Base.Interfaces;
 
 namespace CSVConfiguration
 {
+    /// <summary>
+    /// Factory Design Pattern : Concrete Product 
+    /// </summary>
     public class CSVConfig : IConfig
     {
         public void Open(string connectionString)

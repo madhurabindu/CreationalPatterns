@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6195C2DE-D906-4DF6-BAEB-F6504B991368}</ProjectGuid>
+    <ProjectGuid>{B0A26E4E-AB07-4F13-8365-A34BC929B6B6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Imp.CSVConfig</RootNamespace>
-    <AssemblyName>Imp.CSVConfig</AssemblyName>
+    <RootNamespace>Imp.XMLConfig</RootNamespace>
+    <AssemblyName>Imp.XMLConfig</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CSVConfig.cs" />
+    <Compile Include="XMLConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

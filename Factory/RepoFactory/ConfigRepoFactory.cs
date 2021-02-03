@@ -12,6 +12,7 @@ namespace FactoryPattern.ConfigRepository
     public abstract class ConfigRepoFactory
     {
         /// <summary>
+        /// Factory Design pattern: Creator
         /// Instance of the concrete factory
         /// </summary>
         private static ConfigRepoFactory instance;
@@ -48,7 +49,11 @@ namespace FactoryPattern.ConfigRepository
                 // Older version of software, CSV format
                 instance = new CSVRepoFactory();
             }
-            else
+            else if (appVer.StartsWith("2."))
+            {
+                instance = new XMLRepoFactory();
+            }
+            else 
             {
                 // newer version of software
                 instance = new JSonRepoFactory();

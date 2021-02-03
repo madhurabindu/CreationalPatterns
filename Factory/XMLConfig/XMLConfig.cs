@@ -1,12 +1,9 @@
 ﻿using System;
 using Base.Interfaces;
 
-namespace JSonConfiguration
+namespace Imp.XMLConfig
 {
-    /// <summary>
-    /// Factory Design Pattern : Concrete Product
-    /// </summary>
-    public class JsonConfig : IConfig
+    public class XMLConfig : IConfig
     {
         public void Open(string connectionString)
         {
@@ -15,12 +12,12 @@ namespace JSonConfiguration
         public string ReadAll()
         {
             // read config from a json file
-            return "Json File config";
+            return "XML File config";
+
         }
 
         public void WriteAll(string blob)
         {
-
         }
     }
 }

@@ -5,6 +5,7 @@ using CSVConfiguration;
 namespace FactoryPattern.ConfigRepository
 {
     /// <summary>
+    /// Factory Design pattern: Concrete Creator
     /// Repo factory for old CSV format of repo
     /// </summary>
     public class CSVRepoFactory : ConfigRepoFactory

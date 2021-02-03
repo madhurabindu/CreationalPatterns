@@ -41,7 +41,8 @@ namespace AppMain_FactoryPattern
         static void Main()
         {
             // Change App version to mimic the bahviour of new client
-            ApplicationProperties.AppVersion = "1.2.3";
+            // 1.* is CSV, 2.* is XML and any other is JSON
+            ApplicationProperties.AppVersion = "3.2.3";
 
             Client client = new Client();
             client.SomeOperation();

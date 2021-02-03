@@ -75,13 +75,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BaseInterfaces\Base.Interfaces.csproj">
+      <Project>{722E2497-C223-4240-8B18-ED40EEAA50FD}</Project>
+      <Name>Base.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RepoFactory\Factory.ConfigRepository.csproj">
       <Project>{2E4541DC-B5D8-482C-B90B-82A917D0BD3C}</Project>
       <Name>Factory.ConfigRepository</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\UIInterface\Base.Interfaces.csproj">
-      <Project>{722E2497-C223-4240-8B18-ED40EEAA50FD}</Project>
-      <Name>Base.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

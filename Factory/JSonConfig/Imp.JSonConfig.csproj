@@ -45,8 +45,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\UIInterface\Base.Interfaces.csproj">
-      <Project>{722e2497-c223-4240-8b18-ed40eeaa50fd}</Project>
+    <ProjectReference Include="..\BaseInterfaces\Base.Interfaces.csproj">
+      <Project>{722E2497-C223-4240-8B18-ED40EEAA50FD}</Project>
       <Name>Base.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
