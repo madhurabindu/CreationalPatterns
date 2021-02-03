@@ -34,7 +34,7 @@ Supporting a new configuration only needs new implementation and plugging in the
 
 ## Points to Remember
 - Factory Method is creation through inheritance.
-- Consider designing an internal "object pool" that will allow objects to be reused instead of created from scratch (as in this example).
+- Consider designing an internal "object pool" that will allow objects to be reused instead of creating from scratch (as in this example).
 - It is a common practice to start with a simple factory method by removing the inheritance in the Creator class and have the inheritance only in product. However as system evolves if need arises, the simple factory method turns into pattern as described in picture above as a natural progression.  
 - 
 ## Useful References
