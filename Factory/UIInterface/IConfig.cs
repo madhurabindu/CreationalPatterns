@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Base.Interfaces
 {
+    /// <summary>
+    /// Config repo interface
+    /// </summary>
     public interface IConfig
     {
         void Open(string connectionString);

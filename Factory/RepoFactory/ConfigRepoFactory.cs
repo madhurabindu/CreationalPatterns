@@ -6,42 +6,57 @@ using JSonConfiguration;
 
 namespace FactoryPattern.ConfigRepository
 {
-    public class ConfigRepoFactory
+    /// <summary>
+    /// Base creator class
+    /// </summary>
+    public abstract class ConfigRepoFactory
     {
-        private CSVConfig csvConfig;
-        private JsonConfig jsonConfig;
+        /// <summary>
+        /// Instance of the concrete factory
+        /// </summary>
         private static ConfigRepoFactory instance;
-
+        /// <summary>
+        /// static ctor
+        /// </summary>
         static ConfigRepoFactory()
         {
-            instance = new ConfigRepoFactory();
+            CreateNewRepository();
         }
-
+        /// <summary>
+        /// Accessor
+        /// </summary>
         public static ConfigRepoFactory Instance
         {
             get { return instance; }
         }
 
-        public IConfig GetConfig(string appVersion)
+        /// <summary>
+        /// Derived classes contain the config
+        /// </summary>
+        /// <returns></returns>
+        public abstract IConfig GetConfig();
+        /// <summary>
+        /// Create the right repo factory based on the application version
+        /// </summary>
+        private static void CreateNewRepository()
         {
-            IConfig config = null;
-            if (appVersion.StartsWith("1."))
+            // Read App version here..
+            string appVer = ApplicationProperties.AppVersion;
+
+            if (appVer.StartsWith("1."))
             {
-                if (csvConfig == null)
-                {
-                    csvConfig = new CSVConfig();
-                }
-                config = csvConfig;
+                // Older version of software, CSV format
+                instance = new CSVRepoFactory();
             }
-            else // version greater than 1.
+            else
             {
-                if (jsonConfig == null)
-                {
-                    jsonConfig = new JsonConfig();
-                }
-                config = jsonConfig;
+                // newer version of software
+                instance = new JSonRepoFactory();
             }
-            return config;
         }
     }
+
+   
+
+    
 }

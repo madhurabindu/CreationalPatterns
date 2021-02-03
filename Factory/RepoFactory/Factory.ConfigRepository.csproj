@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigRepoFactory.cs" />
+    <Compile Include="CSVRepoFactory.cs" />
+    <Compile Include="JsonRepoFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

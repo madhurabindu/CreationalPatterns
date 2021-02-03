@@ -75,7 +75,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FactoryPattern\Factory.ConfigRepository.csproj">
+    <ProjectReference Include="..\RepoFactory\Factory.ConfigRepository.csproj">
       <Project>{2E4541DC-B5D8-482C-B90B-82A917D0BD3C}</Project>
       <Name>Factory.ConfigRepository</Name>
     </ProjectReference>

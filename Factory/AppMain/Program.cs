@@ -1,13 +1,38 @@
-﻿using Base.Interfaces;
+﻿using System;
+using Base.Interfaces;
 using FactoryPattern.ConfigRepository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace AppMain_FactoryPattern
 {
+    // Class to mimic a older client code of the repository
+    public class Client
+    {
+        /// <summary>
+        /// Config
+        /// </summary>
+        IConfig config;
+        /// <summary>
+        /// Client Ctor
+        /// </summary>
+        public Client()
+        {
+            // Initialize theconfig
+            config = ConfigRepoFactory.Instance.GetConfig();
+        }
+
+        /// <summary>
+        /// Some operation that needs to access config
+        /// </summary>
+        public void SomeOperation()
+        {
+            Console.WriteLine("<--- In Client {0}--->", ApplicationProperties.AppVersion);
+            string configData = config.ReadAll();
+            Console.WriteLine("Config read: {0}", configData);
+            Console.WriteLine("Clinet is not aware of the concrete class of the config!");
+        }
+    }
+
+
     static class Program
     {
         /// <summary>
@@ -15,13 +40,15 @@ namespace AppMain_FactoryPattern
         /// </summary>
         static void Main()
         {
-            Console.WriteLine("Enter the version of the app to mimic the different app versions. Format majorversion.minorversion.x :");
-            string input = Console.ReadLine();
+            // Change App version to mimic the bahviour of new client
+            ApplicationProperties.AppVersion = "1.2.3";
 
-            IConfig config = ConfigRepoFactory.Instance.GetConfig(input);
+            Client client = new Client();
+            client.SomeOperation();
 
-            string configData = config.ReadAll();
-            Console.WriteLine("Config read: {0}", configData);
+            // New version does not need change to client, older repos
+            // Only requires a new factory to be created and a new repo to be added
         }
+
     }
 }
