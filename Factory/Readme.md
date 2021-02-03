@@ -9,15 +9,15 @@ In Factory pattern, we create object without exposing the creation logic to clie
 ## Mapping the design pattern UML to Example
 | File/Class Name| Mapping UML Class Name  |
 | :-----: | :-: |
-| AppMain\Program.cs | main() function, invoker of client |
 | BaseInterfaces\IConfig.cs| Product |
+| CSVConfig/CSVConfig.cs| ConcreteProduct1|
+| XMLCOnfig/XMLConfig.cs| ConcreteProduct2|
+| JSONConfig/JsonConfig.cs| ConcreteProduct3|
 | RepoFactory/ConfigRepoFactory.cs | Creator |
 | RepoFactory/CSVRepoFactory.cs| ConcreteCreator1|
 | RepoFactory/XMLRepoFactory.cs| ConcreteCreator2|
 | RepoFactory/JsonRepoFactory.cs| ConcreteCreator3|
-| CSVConfig/CSVConfig.cs| ConcreteProduct1|
-| XMLCOnfig/XMLConfig.cs| ConcreteProduct2|
-| JSONConfig/JsonConfig.cs| ConcreteProduct3|
+| AppMain\Program.cs | main() function, invoker of client |
 
 
 ## Useful References
