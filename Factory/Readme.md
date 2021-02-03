@@ -1,11 +1,16 @@
 # Factory Method (Creational Pattern)
 ## Overview
-In Factory pattern, we create object without exposing the creation logic to client and the client use the same common interface to create new type of object. It is creational design pattern that provides an interface for creating objects but allows subclasses to alter the type of an object that will be created.
+Factory method or Factory Design Pattern is a creational design pattern that provides an interface for creating objects but allows subclasses to alter the type of an object that will be created.
+
+In this pattern, we create object without exposing the creation logic to client and the client use the same common interface to create new type of objects. 
+
+## Factory method UML Diagram
+![plot](./factory.gif)
 
 ## Intent
-- Separate the creational logic from rest of the code
-- Defer the instantiation logic to sub class to enable extensibility
-- "new" operator thorughout the code is considered harmful
+- Separate the creational logic of the **Product** from the **Client** and move to **Creator**
+- Defer the instantiation logic to sub classes to enable extensibility
+- "new" operator thorughout the client code is harmful
 
 ## Configuration Example
 The Example depicts a system which was built with its configuration in CSV format. Over time as the technology evolved and the complexity of the system increased, the system was moved to XML based configuration. Later on with support of web based application, the configuration in the JSON format is supported.
@@ -13,8 +18,6 @@ The Example depicts a system which was built with its configuration in CSV forma
 In this example, Different Repositories (Creator) can choose which  Configuration (Product) to create.
 Supporting a new configuration only needs new implementation and plugging in the code to the creation loigc.
 
-## Factory method UML Diagram
-![plot](./factory.gif)
 
 ## Mapping the UML classes to Example code
 | **File/Class Name** | **Mapping UML Class Name**  |
