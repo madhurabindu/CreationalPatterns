@@ -8,16 +8,10 @@ namespace AppMain_FactoryPattern
     public class Client
     {
         /// <summary>
-        /// Config
-        /// </summary>
-        IConfig config;
-        /// <summary>
         /// Client Ctor
         /// </summary>
         public Client()
         {
-            // Initialize theconfig
-            config = ConfigRepoFactory.Instance.GetConfig();
         }
 
         /// <summary>
@@ -26,9 +20,10 @@ namespace AppMain_FactoryPattern
         public void SomeOperation()
         {
             Console.WriteLine("<--- In Client {0}--->", ApplicationProperties.AppVersion);
+            IConfig config = FactoryCreator.Instance.GetFactory().GetConfig();
             string configData = config.ReadAll();
             Console.WriteLine("Config read: {0}", configData);
-            Console.WriteLine("Clinet is not aware of the concrete class of the config!");
+            Console.WriteLine("Client is not aware of the concrete class of the config!");
         }
     }
 
@@ -42,7 +37,8 @@ namespace AppMain_FactoryPattern
         {
             // Change App version to mimic the bahviour of new client
             // 1.* is CSV, 2.* is XML and any other is JSON
-            ApplicationProperties.AppVersion = "3.2.3";
+            Console.WriteLine("Enter the App Version : ");
+            ApplicationProperties.AppVersion = Console.ReadLine();
 
             Client client = new Client();
             client.SomeOperation();
