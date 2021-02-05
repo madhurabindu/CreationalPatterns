@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace App.Main.AbstractFactory
+namespace TestAppForControls
 {
     static class Program
     {
@@ -13,7 +16,7 @@ namespace App.Main.AbstractFactory
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainApp());
+            Application.Run(new TestApp());
         }
     }
 }
