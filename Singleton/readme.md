@@ -4,7 +4,7 @@ The singleton pattern is one of the Gang of Four creational design patterns.
 
 In software engineering, this is a term that implies a class which can only be instantiated once, and a global point of access to that instance is provided.
 
-## Factory method UML Diagram
+## Singleton UML Diagram
 ![plot](./singleton.png)
 
 ## Intent
