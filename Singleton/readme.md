@@ -22,7 +22,7 @@ The Resources are managed by the InternalResourceManager class and the single in
 | [Base.Interfaces/IResourceManager.cs](./Base.Interfaces/IResurceManager.cs)| *Interface of Resource Manager* |
 | [ResourceManager/InternalResourceManager.cs](./ResourceManager/InternalResourceManager.cs)| *Class that needs to be created as a singleton*|
 | [ResourceManager/ResourceManager.cs](./ResourceManager/ResourceManager.cs)| *Singleton Wrapper class*|
-| [AppMain/Program.cs](./AppMain/Program.cs) | *main() function, invoker of singleton* |
+| [App.Main.Singleton/Program.cs](./App.Main.Singleton/Program.cs) | *main() function, invoker of singleton* |
 
 ## Points to Remember
 - Different variations of Singleton implementation are possible. Refer to [this article](https://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples) for the details.
