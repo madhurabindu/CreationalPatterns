@@ -5,6 +5,7 @@
 ## Intent
 
 ## UML Diagram
+![plot](./abstract_1.png)
 
 ## Code Example
 
