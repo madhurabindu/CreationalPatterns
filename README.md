@@ -2,10 +2,10 @@
 
 These are the patterns that deal with object creation mechanism
 - Abstract Factory
-- Factory
 - Builder
-- Prototype
+- Factory
 - Object Pool
+- Prototype
 - Singleton
 
 ## Resources
