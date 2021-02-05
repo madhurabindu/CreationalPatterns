@@ -19,7 +19,7 @@ The Resources are managed by the InternalResourceManager class and the single in
 ## Mapping the UML classes to Example code
 | **File/Class Name** | **Class Description**  |
 | :-----: | :-: |
-| [Base.Interfaces/IResourceManager.cs](./Base.Interfaces/IResourceManager.cs)| *Interface of Resource Manager* |
+| [Base.Interfaces/IResourceManager.cs](./Base.Interfaces/IResurceManager.cs)| *Interface of Resource Manager* |
 | [ResourceManager/InternalResourceManager.cs](./ResourceManager/InternalResourceManager.cs)| *Class that needs to be created as a singleton*|
 | [ResourceManager/ResourceManager.cs](./ResourceManager/ResourceManager.cs)| *Singleton Wrapper class*|
 | [AppMain/Program.cs](./AppMain/Program.cs) | *main() function, invoker of singleton* |
