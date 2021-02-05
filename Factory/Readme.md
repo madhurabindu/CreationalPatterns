@@ -12,7 +12,7 @@ In this pattern, we create object without exposing the creation logic to client 
 - Separate the creational logic of the **Product** from the **Client** and move to **Creator**
 - Defer the instantiation logic to sub classes to enable extensibility
 
-## Configuration Example
+## Code Example
 The Example depicts a system which was built with its configuration in CSV format. Over time as the technology evolved and the complexity of the system increased, the system was moved to XML based configuration. Later on with support of web based application, the configuration in the JSON format is supported.
 
 In this example, Different Repositories (Creator) can choose which  Configuration (Product) to create.
