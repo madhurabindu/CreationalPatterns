@@ -20,7 +20,7 @@ In the example we have set of GUI controls that provide the default control beha
 ## Mapping the UML classes to Example code
 | **File/Class Name** | **Mapping UML Class Name**  |
 | :-----: | :-: |
-| [BaseInterfaces/IIGUIFactory.cs](./BaseInterfaces/IGUIFactory.cs)| *Common Interface for Concrete factories* |
+| [Base.Interfaces/IGUIFactory.cs](./Base.Interfaces/IGUIFactory.cs)| *Common Interface for Concrete factories* |
 | [Factory.GUIControls/GuiControlFactory.cs](./Factory.GUIControls/GuiControlFactory.cs)| *AbstractFactory*|
 | [Factory.GUIControls/LightThemeFactory.cs](./Factory.GUIControls/LightThemeFactory.cs)| *ConcreteFactoryA*|
 | [Factory.GUIControls/DarkThemeFactory.cs](./Factory.GUIControls/DarkThemeFactory.cs)| *ConcreteFactoryB*|
@@ -30,9 +30,9 @@ In the example we have set of GUI controls that provide the default control beha
 | [GUIControls.LightTheme/LightActionButton.cs](./GUIControls.LightTheme/LightActionButton.cs)|*ConcreteProductA1*|
 | [GUIControls.LightTheme/LightImageButton.cs](./GUIControls.LightTheme/LightImageButton.cs)|*ConcreteProductB1*|
 | [GUIControls.LightTheme/LightCenteredLabel.cs](./GUIControls.LightTheme/LightCenteredLabel.cs)|*ConcreteProductC1*|
-| [GUIControls.DarkTheme/DarkActionButton.cs](./GUIControls.LightTheme/DarkActionButton.cs)|*ConcreteProductA2*|
-| [GUIControls.DarkTheme/DarkImageButton.cs](./GUIControls.LightTheme/DarkImageButton.cs)|*ConcreteProductB2*|
-| [GUIControls.DarkTheme/DarkCenteredLabel.cs](./GUIControls.LightTheme/DarkCenteredLabel.cs)|*ConcreteProductC2*|
+| [GUIControls.DarkTheme/DarkActionButton.cs](./GUIControls.DarkTheme/DarkActionButton.cs)|*ConcreteProductA2*|
+| [GUIControls.DarkTheme/DarkImageButton.cs](./GUIControls.DarkTheme/DarkImageButton.cs)|*ConcreteProductB2*|
+| [GUIControls.DarkTheme/DarkCenteredLabel.cs](./GUIControls.DarkTheme/DarkCenteredLabel.cs)|*ConcreteProductC2*|
 | [App.Main.AbstractFactory/Program.cs](./App.Main.AbstractFactory/Program.cs) | *Sample UI to show the working of two themes* |
 
 
