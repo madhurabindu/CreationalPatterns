@@ -3,15 +3,19 @@
 ## Overview
 Abstract factory is a creational pattern which allows you to create not one product like Factory method, but family of products without exposing the details of the concrete classes to the client.
 
+
 ## Intent
 - Remove new operator from the client code
 - Create family of related or dependent products without revealing the details of concrete classes.
 
+
 ## UML Diagram
 ![plot](./abstract_1.png)
 
+
 ## Code Example
 In the example we have set of GUI controls that provide the default control behaviour. Then there are different variations of these controls like - light theme controls and dark theme controls. If everytime a client needs to create a control if it needs to evalutate the "current" theme and create the necessary control, that would be a nightmare of a code to manage. Enter Abstract factory pattern. Using this pattern we have factories for creating different themes, different variations of the base set of controls. The client code is only responsible of switching between these factories.
+
 
 ## Mapping the UML classes to Example code
 | **File/Class Name** | **Mapping UML Class Name**  |
@@ -31,10 +35,12 @@ In the example we have set of GUI controls that provide the default control beha
 | [GUIControls.DarkTheme/LightCenteredLabel.cs](./GUIControls.LightTheme/DarkCenteredLabel.cs)|*ConcreteProductC2*|
 | [App.Main.AbstractFactory/Program.cs](./App.Main.AbstractFactory/Program.cs) | *Sample UI to show the working of two themes* |
 
+
 ## Points to Remember
 - Abstract Factory is usually realized using Factory method
 - For configuring the abstract factory, it is possible to use prototype too
 - Abstract factory is usually not used for a single product. It is used for families of products.
+
 
 ## Resources
 - https://sourcemaking.com/design_patterns/abstract_factory
