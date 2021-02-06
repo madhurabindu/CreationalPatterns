@@ -30,9 +30,9 @@ In the example we have set of GUI controls that provide the default control beha
 | [GUIControls.LightTheme/LightActionButton.cs](./GUIControls.LightTheme/LightActionButton.cs)|*ConcreteProductA1*|
 | [GUIControls.LightTheme/LightImageButton.cs](./GUIControls.LightTheme/LightImageButton.cs)|*ConcreteProductB1*|
 | [GUIControls.LightTheme/LightCenteredLabel.cs](./GUIControls.LightTheme/LightCenteredLabel.cs)|*ConcreteProductC1*|
-| [GUIControls.DarkTheme/LightActionButton.cs](./GUIControls.LightTheme/DarkActionButton.cs)|*ConcreteProductA2*|
-| [GUIControls.DarkTheme/LightImageButton.cs](./GUIControls.LightTheme/DarkImageButton.cs)|*ConcreteProductB2*|
-| [GUIControls.DarkTheme/LightCenteredLabel.cs](./GUIControls.LightTheme/DarkCenteredLabel.cs)|*ConcreteProductC2*|
+| [GUIControls.DarkTheme/DarkActionButton.cs](./GUIControls.LightTheme/DarkActionButton.cs)|*ConcreteProductA2*|
+| [GUIControls.DarkTheme/DarkImageButton.cs](./GUIControls.LightTheme/DarkImageButton.cs)|*ConcreteProductB2*|
+| [GUIControls.DarkTheme/DarkCenteredLabel.cs](./GUIControls.LightTheme/DarkCenteredLabel.cs)|*ConcreteProductC2*|
 | [App.Main.AbstractFactory/Program.cs](./App.Main.AbstractFactory/Program.cs) | *Sample UI to show the working of two themes* |
 
 
