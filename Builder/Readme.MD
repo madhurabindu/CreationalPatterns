@@ -1,4 +1,4 @@
-# Prototype Pattern (Creational Pattern)
+# Builder Pattern (Creational Pattern)
 
 ## Overview
 
