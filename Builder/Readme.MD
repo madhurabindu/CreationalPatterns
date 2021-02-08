@@ -5,7 +5,7 @@
 ## Intent
 
 ## UML Diagram
-![plot](./builder_1.png)
+![plot](./builder_1.gif)
 
 ## Code Example
 
