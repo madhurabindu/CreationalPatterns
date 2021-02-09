@@ -15,10 +15,17 @@ The pattern allows you to create different flavors of an object while avoiding c
 ![plot](./builder_1.gif)
 
 ## Code Example
-https://ronnieschaniel.medium.com/object-oriented-design-patterns-explained-using-practical-examples-84807445b092
-https://ronnieschaniel.medium.com/object-oriented-design-patterns-explained-using-practical-examples-84807445b092
+The Example shows a communication framework which is built using Builder Pattern.
+In the Example the client calls the Director class methods to create the communication channel.
+Once created, the client can only worry about the messages to be sent and received.
+
+The Director class makes the decision of what kind/representation of the Product (Channel) that is required.
+The Director uses the Builder to build the parts of the communication channel step by step.
+
+The communication framework is not implementation complete. The idea is to show the Builder pattern and how it can be used to get different flavours rathen than having a completely working communcation framework.
 
 ## Mapping the UML classes to Example code
+TBD
 
 ## Points to Remember
 - The key difference from the factory pattern is that; factory pattern is to be used when the creation is a one step process while builder pattern is to be used when the creation is a multi step process.
