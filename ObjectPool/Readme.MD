@@ -26,3 +26,5 @@ Object Pool pattern can be considered when
 
 ## Resources
 - https://www.oodesign.com/object-pool-pattern.html
+- https://blog.francium.tech/object-pool-design-pattern-when-and-how-to-use-one-5790fb3e5a93
+- https://docs.microsoft.com/en-us/dotnet/standard/collections/thread-safe/how-to-create-an-object-pool?redirectedfrom=MSDN
