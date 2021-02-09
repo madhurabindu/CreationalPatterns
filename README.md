@@ -3,7 +3,7 @@
 These are the patterns that deal with object creation mechanism
 - [Abstract Factory](./AbstractFactory)
 - [Builder](./Builder)
-- [Factory](./Facory)
+- [Factory](./Factory)
 - [Object Pool](./ObjectPool)
 - [Prototype](./Prototype)
 - [Singleton](./Singleton)
