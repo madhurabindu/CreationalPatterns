@@ -16,6 +16,13 @@ In this case doing new throughout the code us not just harmful but also expensiv
 
 ## Code Example
 
+Here are some most common usages:
+
+- Threads – creating a thread is an extremely expensive operation so .NET introduced an internal mechanism called ThreadPool.
+- Database connections – creating a single connection is time-consuming so ADO.NET created SQL Server Connection Pooling.
+- Socket connections – presents the same problem as database connections. The solution was presented in this
+- Large graphics objects – as bitmaps, fonts etc. are also faster to reload than create from scratch.
+
 ## Mapping the UML classes to Example code
 
 ## Points to Remember
