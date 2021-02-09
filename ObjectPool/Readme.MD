@@ -2,6 +2,7 @@
 
 ## Overview
 When objects are expensive to create and/or they are needed only for short periods of time it is advantageous to utilize the Object Pool pattern. 
+
 The Object Pool provides a cache for instantiated objects reuse. Cache performs tracking of which objects are in use and which are available. 
 If no objects are available then new instances are created. 
 
