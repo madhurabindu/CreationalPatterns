@@ -19,9 +19,11 @@ In this case doing new throughout the code us not just harmful but also expensiv
 Here are some most common usages:
 
 - Threads – creating a thread is an extremely expensive operation so .NET introduced an internal mechanism called ThreadPool.
-- Database connections – creating a single connection is time-consuming so ADO.NET created SQL Server Connection Pooling.
-- Socket connections – presents the same problem as database connections. The solution was presented in this
+- Database connections – creating a single connection is time-consuming so ADO.NET created SQL Server Connection pooling.
 - Large graphics objects – as bitmaps, fonts etc. are also faster to reload than create from scratch.
+- Socket connections – presents the same problem as database connections.
+
+https://www.infoworld.com/article/3221392/how-to-use-the-object-pool-design-pattern-in-c.html
 
 ## Mapping the UML classes to Example code
 
