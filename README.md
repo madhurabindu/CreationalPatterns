@@ -1,7 +1,7 @@
 # Creational Patterns
 
 These are the patterns that deal with object creation mechanism
-- Abstract Factory
+- [Abstract Factory](./AbstractFactory)
 - Builder
 - Factory
 - Object Pool
