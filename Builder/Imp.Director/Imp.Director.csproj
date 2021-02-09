@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{38DB6708-FE10-441F-89FC-D47720394FB0}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>App.Main.Builder</RootNamespace>
-    <AssemblyName>App.Main.Builder</AssemblyName>
+    <ProjectGuid>{A00297DF-B422-4A55-A110-D477CD147EF4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Imp.Director</RootNamespace>
+    <AssemblyName>Imp.Director</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,24 +41,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="ChattyDirector.cs" />
+    <Compile Include="SecureDirector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
+    <Compile Include="WebDirector.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Base.CommunicationFramework\Base.CommunicationFramework.csproj">
       <Project>{5856A89C-2C30-4152-B0EE-2AB6318B8348}</Project>
       <Name>Base.CommunicationFramework</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Base.Interface\Base.Interface.csproj">
+      <Project>{d8e477fc-93d6-4151-b02c-02632cd62d94}</Project>
+      <Name>Base.Interface</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Imp.Builder\Imp.Builder.csproj">
-      <Project>{0651df5a-fa92-4695-9146-3abe59ef078b}</Project>
+      <Project>{0651DF5A-FA92-4695-9146-3ABE59EF078B}</Project>
       <Name>Imp.Builder</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Imp.Director\Imp.Director.csproj">
-      <Project>{A00297DF-B422-4A55-A110-D477CD147EF4}</Project>
-      <Name>Imp.Director</Name>
+    <ProjectReference Include="..\Imp.Compression\Imp.Compression.csproj">
+      <Project>{c05c3597-189a-4bdc-8923-0d8ff34ff328}</Project>
+      <Name>Imp.Compression</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Imp.Encoders\Imp.Encoders.csproj">
+      <Project>{6b50f79b-6463-49d8-bc6e-27d2bb221beb}</Project>
+      <Name>Imp.Encoders</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
