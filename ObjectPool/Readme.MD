@@ -25,3 +25,4 @@ Object Pool pattern can be considered when
 - Objects are stateless and can be reused.
 
 ## Resources
+- https://www.oodesign.com/object-pool-pattern.html
