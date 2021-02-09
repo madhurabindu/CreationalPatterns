@@ -7,6 +7,7 @@ If no objects are available then new instances are created.
 
 ## Intent
 Object Pool manages a set of instances instead of creating and destroying them on demand.
+
 In this case doing new throughout the code us not just harmful but also expensive.
 
 ## UML Diagram
