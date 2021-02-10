@@ -24,6 +24,8 @@ The Director uses the Builder to build the parts of the communication channel st
 
 The communication framework is not implementation complete. The idea is to show the Builder pattern and how it can be used to get different flavours rathen than having a completely working communcation framework.
 
+![Example Output](./builder_output.png)
+
 ## Mapping the UML classes to Example code
 | **File/Class Name** | **Mapping UML to Example Code**  |
 | :-----: | :-: |
