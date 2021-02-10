@@ -28,9 +28,9 @@ The communication framework is not implementation complete. The idea is to show 
 | **File/Class Name** | **Mapping UML to Example Code**  |
 | :-----: | :-: |
 | [Imp.Builder/Builder.cs](./Imp.Builders/Builder.cs)| *Builder class which creates different representations of Product* |
-| [Imp.Director/ChattyDirector.cs](./Imp.Director/ChattyDirector.cs)| *The Director that calls methods on Builder to create a chatty communication channel* |
-| [Imp.Director/WebDirector.cs](./Imp.Director/WebDirector.cs)| *The Director that calls methods on Builder to create a communication channel for web communication* |
-| [Imp.Director/SecureDirector.cs](./Imp.Director/SecureDirector.cs)| *The Director that calls methods on Builder to create a secure communication channel* |
+| [Imp.Director/ChattyDirector.cs](./Imp.Director/ChattyDirector.cs)| *Director that using Builder creates a chatty communication channel* |
+| [Imp.Director/WebDirector.cs](./Imp.Director/WebDirector.cs)| *Director that using Builder creates a communication channel for web communication* |
+| [Imp.Director/SecureDirector.cs](./Imp.Director/SecureDirector.cs)| *Director that using Builder creates a secure communication channel* |
 | [Base.CommunicationFramework/IChannel.cs](./Imp.Director/IChannel.cs)| *The Product Interface* |
 | [Base.CommunicationFramework/ServerChannel.cs](./Imp.Director/ServerChannel.cs)| *The Concrete Product1* |
 | [Base.CommunicationFramework/ClientChannel.cs](./Imp.Director/ClientChannel.cs)| *The Concrete Product2* |
