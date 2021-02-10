@@ -18,7 +18,11 @@ The example shows a sinple application to generate official letters in an organi
 The sample initializes the different letter templates with default values. When a new letter needs to be generated, the template is cloned and the necessary fields are filled.
 
 ## Mapping the UML classes to Example code
-TBD
+| **File/Class Name** | **Mapping UML to Example Code**  |
+| :-----: | :-: |
+|[Base.Interfaces/ILetter.cs](./Base.Interfaces/Iletter.cs)|*Prototype interface*|
+|[Imp.Letters/GenericLetter.cs](./Imp.Letters/GenericLetter.cs)|*Concrete Prototype*|
+|[App.Main.Prototype/MainApp.cs](./App.Main.Prototype/MainApp.cs)|*Client*|
 
 ## Points to Remember
 - The process of copying an object can be complicated.
