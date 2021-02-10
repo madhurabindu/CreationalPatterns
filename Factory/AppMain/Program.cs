@@ -19,11 +19,17 @@ namespace AppMain_FactoryPattern
         /// </summary>
         public void SomeOperation()
         {
-            Console.WriteLine("<--- In Client {0}--->", ApplicationProperties.AppVersion);
+            var temp = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("<-------- Finding Config for App[{0}] -------->", ApplicationProperties.AppVersion);
+            Console.ForegroundColor = temp;
             IConfig config = FactoryCreator.Instance.GetFactory().GetConfig();
             string configData = config.ReadAll();
             Console.WriteLine("Config read: {0}", configData);
             Console.WriteLine("Client is not aware of the concrete class of the config!");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("<----------------------------------------------->", ApplicationProperties.AppVersion);
+            Console.ForegroundColor = temp;
         }
     }
 
@@ -37,12 +43,12 @@ namespace AppMain_FactoryPattern
         {
             // Change App version to mimic the bahviour of new client
             // 1.* is CSV, 2.* is XML and any other is JSON
-            Console.WriteLine("Enter the App Version : ");
+            Console.Write("Enter the App Version : ");
             ApplicationProperties.AppVersion = Console.ReadLine();
-
+            Console.WriteLine();
             Client client = new Client();
             client.SomeOperation();
-
+            Console.WriteLine();
             // New version does not need change to client, older repos
             // Only requires a new factory to be created and a new repo to be added
         }

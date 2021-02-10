@@ -18,6 +18,7 @@ The Example depicts a system which was built with its configuration in CSV forma
 In this example, Different Repositories (Creator) can choose which  Configuration (Product) to create.
 Supporting a new configuration only needs new implementation and plugging in the code to the creation loigc.
 
+![Example Output](./factory_output.png)
 
 ## Mapping the UML classes to Example code
 | **File/Class Name** | **Mapping UML Class Name**  |
