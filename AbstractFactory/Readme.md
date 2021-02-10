@@ -15,7 +15,7 @@ Abstract factory is a creational pattern which allows you to create not one prod
 ## Example Code
 In the example we have set of GUI controls that provide the default control behaviour. Then there are different variations of these controls like - light theme controls and dark theme controls. If everytime a client needs to create a control if it needs to evalutate the "current" theme and create the necessary control, that would be a nightmare of a code to manage. Enter Abstract factory pattern. Using this pattern we have factories for creating different themes, different variations of the base set of controls. The client code is only responsible of switching between these factories.
 
-![plot](./abstract_output.png =250x)
+![plot](./abstract_output.png=250x)
 
 ## Mapping the UML classes to Example code
 | **File/Class Name** | **Mapping UML Class Name**  |
