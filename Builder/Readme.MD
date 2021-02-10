@@ -9,7 +9,7 @@ The pattern allows you to create different flavors of an object while avoiding c
 ## Intent
 - Remove constructor with lot of parameters from the client code
 - Separate the construction of a complex object from its representation
-- SAme construction code (Builder) creates different representations of a particular kind of object
+- Same construction code (Builder) creates different representations of a particular kind of object
 
 ## UML Diagram
 ![plot](./builder_1.gif)
