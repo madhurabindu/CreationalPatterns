@@ -25,7 +25,16 @@ The Director uses the Builder to build the parts of the communication channel st
 The communication framework is not implementation complete. The idea is to show the Builder pattern and how it can be used to get different flavours rathen than having a completely working communcation framework.
 
 ## Mapping the UML classes to Example code
-TBD
+| **File/Class Name** | **Mapping UML to Example Code**  |
+| :-----: | :-: |
+| [Imp.Builder/Builder.cs](./Imp.Builders/Builder.cs)| *Builder class which creates different representations of Product* |
+| [Imp.Director/ChattyDirector.cs](./Imp.Director/ChattyDirector.cs)| *The Director that calls methods on Builder to create a chatty communication channel* |
+| [Imp.Director/WebDirector.cs](./Imp.Director/WebDirector.cs)| *The Director that calls methods on Builder to create a communication channel for web communication* |
+| [Imp.Director/SecureDirector.cs](./Imp.Director/SecureDirector.cs)| *The Director that calls methods on Builder to create a secure communication channel* |
+| [Base.CommunicationFramework/IChannel.cs](./Imp.Director/IChannel.cs)| *The Product Interface* |
+| [Base.CommunicationFramework/ServerChannel.cs](./Imp.Director/ServerChannel.cs)| *The Concrete Product1* |
+| [Base.CommunicationFramework/ClientChannel.cs](./Imp.Director/ClientChannel.cs)| *The Concrete Product2* |
+
 
 ## Points to Remember
 - The key difference from the factory pattern is that; factory pattern is to be used when the creation is a one step process while builder pattern is to be used when the creation is a multi step process.
