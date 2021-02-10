@@ -17,6 +17,8 @@ The example shows a sinple application to generate official letters in an organi
 
 The sample initializes the different letter templates with default values. When a new letter needs to be generated, the template is cloned and the necessary fields are filled.
 
+![Example Output](./prototype_output.png)
+
 ## Mapping the UML classes to Example code
 | **File/Class Name** | **Mapping UML to Example Code**  |
 | :-----: | :-: |
