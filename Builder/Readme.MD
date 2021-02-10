@@ -7,7 +7,7 @@ The Builder pattern is a Creational Design Pattern which helps in constructing a
 
 The pattern allows you to create different flavors of an object while avoiding constructor pollution. This pattern is useful when there could be several flavors of an object. Or when there are a lot of steps involved in creation of an object.
 ## Intent
-- Remove new operator from through out the code
+- Remove constructor with lot of parameters from the client code
 - Separate the construction of a complex object from its representation
 - SAme construction code (Builder) creates different representations of a particular kind of object
 
