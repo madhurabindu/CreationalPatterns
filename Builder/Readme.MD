@@ -29,9 +29,9 @@ TBD
 
 ## Points to Remember
 - The key difference from the factory pattern is that; factory pattern is to be used when the creation is a one step process while builder pattern is to be used when the creation is a multi step process.
-- A complex builder could internally use other creational patterns like Factory Method, Prototype of abstract factory.
-- Usually designs start with a Factory method. As the system evolves the design evolves into either Abstract Factory or Builder or sometimes Builder which internally uses Abstract Factory for construction of its representation.
-- Be aware: Builders can be anti-pattern if used unnecessarily. 
+- A complex builder could internally use other creational patterns like Factory Method, Prototype or abstract factory.
+- Usually the system designs start with a Factory method. As the system evolves the design evolves into either Abstract Factory or Builder or sometimes Builder which internally uses Abstract Factory for construction of its objecs and their representation.
+- Be aware: Builders can be [anti-pattern](https://quinngil.com/2019/12/17/builders-as-an-antipattern/) if used unnecessarily. 
 
 ## Resources
 - https://sourcemaking.com/design_patterns/builder
