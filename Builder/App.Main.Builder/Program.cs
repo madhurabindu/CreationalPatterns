@@ -15,6 +15,7 @@ namespace App.Main.Builder
 
             Console.WriteLine("Enter a Message to send to Top Secretive Secure Server");
             string message = Console.ReadLine();
+            Console.WriteLine();
             channel.SendMessage(message);
 
             // Chatty director creates a channel that is secure for communication
@@ -24,6 +25,7 @@ namespace App.Main.Builder
 
             Console.WriteLine("\n\nEnter a Message to send to Chat Server");
             message = Console.ReadLine();
+            Console.WriteLine();
             channel.SendMessage(message);
 
             // Web director creates a channel that is secure for communication
@@ -31,8 +33,9 @@ namespace App.Main.Builder
             WebDirector dr3 = new WebDirector();
             channel = dr3.ConstructClientChannel();
 
-            Console.WriteLine("\n\nEnter a Message to send to Chat Server");
+            Console.WriteLine("\n\nEnter a Message to send to Web Server");
             message = Console.ReadLine();
+            Console.WriteLine();
             channel.SendMessage(message);
         }
     }

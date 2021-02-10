@@ -31,7 +31,11 @@ namespace Base.CommunicationFramework
         public override void SendMessage(string data)
         {
             Console.WriteLine("To Server: [{0}] on port [{1}]", Address, Port);
-            Console.WriteLine("Sending Message: [{0}] With", data);
+            var temp = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Sending Message: [{0}] With", data, Console.ForegroundColor);
+            Console.ForegroundColor = temp;
+
             Console.WriteLine("\t-Encoding : {0}", Encoder.ToString());
             Console.WriteLine("\t-Compression : {0} ", Compression == null? "NONE" : Compression.ToString());
             Console.WriteLine("\t-Protocol : {0}", Protocol.ToString());
