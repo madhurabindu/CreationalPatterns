@@ -1,9 +1,11 @@
 # Creational Patterns
 
-# Overview
+## Overview
+These are the patterns that deal with object creation mechanism
+
 ![](./creational.png)
 
-These are the patterns that deal with object creation mechanism
+## Types of Creational Patterns
 - [Abstract Factory](./AbstractFactory)
 - [Builder](./Builder)
 - [Factory](./Factory)
