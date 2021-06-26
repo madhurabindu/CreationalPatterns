@@ -5,7 +5,7 @@ Factory method or Factory Design Pattern is a creational design pattern that pro
 In this pattern, we create object without exposing the creation logic to client and the client use the same common interface to create new type of objects. 
 
 ## Factory method UML Diagram
-![plot](./factory.gif)
+![plot](./factory.png)
 
 ## Intent
 - "new" operator thorughout the client code is harmful
