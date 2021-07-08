@@ -2,7 +2,7 @@
 
 ## Overview
 Abstract factory is a creational pattern which allows you to create not one product like Factory method, but family of products without exposing the details of the concrete classes to the client.
-
+Abstract Factory offers the interface for creating a family of related objects, without explicitly specifying their classes.
 
 ## Intent
 - Remove new operator from the client code
@@ -35,6 +35,12 @@ In the example we have set of GUI controls that provide the default control beha
 | [GUIControls.DarkTheme/DarkCenteredLabel.cs](./GUIControls.DarkTheme/DarkCenteredLabel.cs)|*ConcreteProductC2*|
 | [App.Main.AbstractFactory/Program.cs](./App.Main.AbstractFactory/Program.cs) | *Sample UI to show the working of two themes* |
 
+## Applicability & Examples
+We should use the Abstract Factory design pattern when:
+the system needs to be independent from the way the products it works with are created.
+the system is or should be configured to work with multiple families of products.
+a family of products is designed to work only all together.
+the creation of a library of products is needed, for which is relevant only the interface, not the implementation, too.
 
 ## Points to Remember
 - Abstract Factory is usually realized using Factory method
