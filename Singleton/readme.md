@@ -34,3 +34,4 @@ The Resources are managed by the InternalResourceManager class and the single in
 - [https://refactoring.guru/design-patterns/singleton](https://refactoring.guru/design-patterns/singleton)
 - [https://sourcemaking.com/design_patterns/singleton](https://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples)
 - [https://www.michaelsafyan.com/tech/design/patterns/singleton](https://www.michaelsafyan.com/tech/design/patterns/singleton)
+- https://www.oodesign.com/singleton-pattern.html
