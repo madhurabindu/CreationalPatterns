@@ -6,9 +6,9 @@ These are the patterns that deal with object creation mechanism
 ![](./creational.png)
 
 ## Types of Creational Patterns
-- [Abstract Factory](./AbstractFactory)
+- [Abstract Factory](./AbstractFactory) : for creating a family of related objects
 - [Builder](./Builder)
-- [Factory](./Factory)
+- [Factory](./Factory) : provides interface to create objects
 - [Object Pool](./ObjectPool)
 - [Prototype](./Prototype)
 - [Singleton](./Singleton)
